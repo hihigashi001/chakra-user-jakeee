@@ -10,7 +10,7 @@ type AppProps = {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <LoginUserProvider>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider resetCSS={true} theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>
     </LoginUserProvider>
